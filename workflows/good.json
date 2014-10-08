@@ -1,0 +1,26 @@
+{ 
+    "instanceId" : "080ddfc2-a04c-450c-b140-4e49d77c297f",
+    "status" : "Completed",
+    "pendingExternalActivities" : [ ],
+    "outputs" : [ { 
+        "isRequired" : false,
+        "name" : "wfError",
+        "typeName" : "System.Boolean, mscorlib",
+        "runtimeTypeName" : "System.Boolean, mscorlib",
+        "value" : false
+    }, { 
+        "isRequired" : false,
+        "name" : "wfErrorMsg",
+        "typeName" : "System.String, mscorlib",
+        "runtimeTypeName" : "System.String, mscorlib",
+        "value" : "No features on EPM_GEOPHYSICAL_LN filtered"
+    }, { 
+        "isRequired" : false,
+        "name" : "rdNames",
+        "typeName" : "System.Collections.Generic.IList`1[[System.String, mscorlib]], mscorlib",
+        "runtimeTypeName" : "System.Collections.Generic.IList`1[[System.String, mscorlib]], mscorlib",
+        "value" : [ "BULKLEY-NECHAKO", "PEACE RIVER" ]
+    } ],
+    "workflowData" : null,
+    "instanceData" : ""
+}

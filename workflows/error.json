@@ -1,0 +1,94 @@
+{ 
+    "error" : { 
+        "code" : 500,
+        "message" : "Exception has been thrown by the target of an invocation.\nUnable to retrieve the input arguments to execute the workflow\nUnable to serialize an input parameter.\nUnable to deserialize json to create ArgumentInfo.\nUnable to deserialize object of type 'System.Int32'.\nThere was an error deserializing the object of type System.Int32. The value 'application_num=585 and revision_number=0' cannot be parsed as the type 'Int32'.\nThe value 'application_num=585 and revision_number=0' cannot be parsed as the type 'Int32'.\nInput string was not in a correct format.",
+        "details" : [ "Exception has been thrown by the target of an invocation.", "Unable to retrieve the input arguments to execute the workflow", "Unable to serialize an input parameter.", "Unable to deserialize json to create ArgumentInfo.", "Unable to deserialize object of type 'System.Int32'.", "There was an error deserializing the object of type System.Int32. The value 'application_num=585 and revision_number=0' cannot be parsed as the type 'Int32'.", "The value 'application_num=585 and revision_number=0' cannot be parsed as the type 'Int32'.", "Input string was not in a correct format." ],
+        "principal" : { 
+            "isAuthenticated" : false,
+            "label" : "Guest",
+            "expiry" : null,
+            "identities" : [ { 
+                "authenticationType" : "",
+                "isAuthenticated" : false,
+                "nameClaimType" : "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+                "roleClaimType" : "http://schemas.microsoft.com/ws/2008/06/identity/claims/role",
+                "label" : null,
+                "claims" : [ { 
+                    "type" : "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+                    "value" : "Guest",
+                    "valueType" : "http://www.w3.org/2001/XMLSchema#string",
+                    "issuer" : "urn:gcx:guest",
+                    "originalIssuer" : "urn:gcx:guest",
+                    "properties" : { }
+                }, { 
+                    "type" : "http://www.geocortex.net/security/claims/category/guest",
+                    "value" : "",
+                    "valueType" : "http://www.w3.org/2001/XMLSchema#string",
+                    "issuer" : "urn:gcx:guest",
+                    "originalIssuer" : "urn:gcx:guest",
+                    "properties" : { }
+                }, { 
+                    "type" : "http://www.geocortex.net/security/claims/audience",
+                    "value" : "",
+                    "valueType" : "http://www.w3.org/2001/XMLSchema#string",
+                    "issuer" : "urn:gcx:global",
+                    "originalIssuer" : "urn:gcx:global",
+                    "properties" : { }
+                }, { 
+                    "type" : "http://www.geocortex.net/security/claims/policy",
+                    "value" : "",
+                    "valueType" : "http://www.w3.org/2001/XMLSchema#string",
+                    "issuer" : "urn:gcx:global",
+                    "originalIssuer" : "urn:gcx:global",
+                    "properties" : { }
+                }, { 
+                    "type" : "http://www.geocortex.net/security/claims/category",
+                    "value" : "clear-conversation",
+                    "valueType" : "http://www.w3.org/2001/XMLSchema#string",
+                    "issuer" : "urn:gcx:global",
+                    "originalIssuer" : "urn:gcx:global",
+                    "properties" : { }
+                }, { 
+                    "type" : "http://www.geocortex.net/security/claims/category/known",
+                    "value" : "",
+                    "valueType" : "http://www.w3.org/2001/XMLSchema#string",
+                    "issuer" : "urn:gcx:global",
+                    "originalIssuer" : "urn:gcx:global",
+                    "properties" : { }
+                }, { 
+                    "type" : "http://www.geocortex.net/security/claims/category/any",
+                    "value" : "",
+                    "valueType" : "http://www.w3.org/2001/XMLSchema#string",
+                    "issuer" : "urn:gcx:global",
+                    "originalIssuer" : "urn:gcx:global",
+                    "properties" : { }
+                } ]
+            } ],
+            "policy" : { 
+                "authenticate" : false,
+                "hints" : null,
+                "issuers" : [ { 
+                    "displayName" : "Windows Integrated",
+                    "displayType" : "Windows Integrated",
+                    "type" : "windows",
+                    "hint" : null,
+                    "urls" : { 
+                        "signIn" : "http://orca1.pacificgeotech.local/Geocortex/Essentials/REST/security/signIn?idp_name=AD AUTHORITY"
+                    }
+                } ]
+            },
+            "urls" : { 
+                "expirationNotice" : "http://orca1.pacificgeotech.local/Geocortex/Essentials/REST/security/expirationNotice",
+                "referrer" : "http://orca1.pacificgeotech.local/Geocortex/Essentials/REST/sites/epermitDev/workflows/outsidePrrdNrrdIndicatorWf/run",
+                "refresh" : null,
+                "signIn" : "http://orca1.pacificgeotech.local/Geocortex/Essentials/REST/security/signIn",
+                "signOut" : "http://orca1.pacificgeotech.local/Geocortex/Essentials/REST/security/signOut"
+            },
+            "tokens" : { 
+                "arcgis" : { },
+                "geocortex" : { },
+                "site" : null
+            }
+        }
+    }
+}

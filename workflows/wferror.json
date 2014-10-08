@@ -1,0 +1,32 @@
+{ 
+    "instanceId" : "b470adce-4657-489e-a03e-7a3f30c6c97e",
+    "status" : "Completed",
+    "pendingExternalActivities" : [ ],
+    "outputs" : [ { 
+        "isRequired" : false,
+        "name" : "wfError",
+        "typeName" : "System.Boolean, mscorlib",
+        "runtimeTypeName" : "System.Boolean, mscorlib",
+        "value" : true
+    }, { 
+        "isRequired" : false,
+        "name" : "wfErrorMsg",
+        "typeName" : "System.String, mscorlib",
+        "runtimeTypeName" : "System.String, mscorlib",
+        "value" : null
+    }, { 
+        "isRequired" : false,
+        "name" : "totalLengthKm",
+        "typeName" : "System.Double, mscorlib",
+        "runtimeTypeName" : "System.Double, mscorlib",
+        "value" : 1.425447386644678
+    }, { 
+        "isRequired" : false,
+        "name" : "totalAreaHa",
+        "typeName" : "System.Double, mscorlib",
+        "runtimeTypeName" : "System.Double, mscorlib",
+        "value" : 0.687816893433
+    } ],
+    "workflowData" : null,
+    "instanceData" : ""
+}
