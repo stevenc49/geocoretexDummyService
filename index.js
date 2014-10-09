@@ -26,7 +26,8 @@ app.get('/workflows/good.json', function(req, res){
 //     socket.io
 //////////////////////////////////////
 io.on('connection', function(socket){
-  console.log('a user connected');
+    console.log('a connection was established');
+    socket.emit('update', 'express1:OK');
 });
 
 
