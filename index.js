@@ -43,14 +43,16 @@ function checkAllWorkflows() {
     var url = "http://localhost:8888/monitorServices/pingUrl?url=http://www.google.ca";
     console.log("Calling " + url);
     
-    require('http').get(url, function(res) { 
+    io.sockets.emit('start', 'express1');
+
+    require('http').get(url, function(res) {    //this callback will only get run every 5 seconds if the wf takes 5 seconds
       
       res.on('data', function (chunk) {
         console.log('Response: ' + chunk);
 
-        io.sockets.emit('broadcast', 'express1:' + chunk.toString());
+        io.sockets.emit('end', 'express1:' + chunk.toString());
       });
-      
+
     }).on('error', function(e) {
       console.log("Got error: " + e.message);
     });
