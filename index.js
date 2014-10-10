@@ -48,33 +48,13 @@ function checkAllWorkflows() {
       res.on('data', function (chunk) {
         console.log('Response: ' + chunk);
 
-        io.sockets.emit('broadcast', chunk.toString());
+        io.sockets.emit('broadcast', 'express1:' + chunk.toString());
       });
+      
     }).on('error', function(e) {
       console.log("Got error: " + e.message);
     });
-
-    /*
-    var options = {
-      hostname: 'localhost',
-      port: 8888,
-      path: '/pingUrl?url=http://www.google.ca',
-      method: 'GET'
-    };
     
-    var req = require('http').request(options, function(res) {
-      console.log('STATUS: ' + res.statusCode);
-      console.log('HEADERS: ' + JSON.stringify(res.headers));
-      res.setEncoding('utf8');
-      res.on('data', function (chunk) {
-        console.log('BODY: ' + chunk);
-      });
-    });
-    
-    console.log(req);
-    */
-    
-    io.sockets.emit('broadcast', 'workflow updates');
     setTimeout(function () { checkAllWorkflows() }, sleepTime);
 }
 
